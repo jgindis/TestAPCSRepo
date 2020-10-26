@@ -1,5 +1,6 @@
 public class Demo {
   public static void main(String[] args) {
+    System.out.print(create2DArray(3,6,5));
   }
 
   public static void printLoop(int n) {
@@ -47,7 +48,7 @@ public class Demo {
         return arr;
       }
 
-  public static int[][] create2DArrayrand(int row, int col, int len) {
+  public static int[][] create2DArrayRandomized(int row, int col, int len) {
     int[][] arr = new int[row][];
     for (int i = 0; i < row; i++) {
       double randcol = Math.random() * (col + 1);
