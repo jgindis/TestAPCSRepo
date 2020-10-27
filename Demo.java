@@ -36,16 +36,16 @@ public class Demo {
   }
 
   public static int[][] create2DArray(int row, int col, int len) {
-    int[][] arr = new int[row][col];
+    int[][] b = new int[row][col];
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
             double rand = Math.random() * len++;
             double round = Math.floor(rand);
             int str = (int)round;
-            arr[i][j] = str;
+            b[i][j] = str;
           }
         }
-        return arr;
+        return b;
       }
 
   public static int[][] create2DArrayRandomized(int row, int col, int len) {
